@@ -1,0 +1,186 @@
+@font-face {
+    font-family: RobotoNormal;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url(../fonts/RobotoSlab.ttf);
+}
+body {
+    margin: 0;
+    font-family: RobotoNormal;
+    padding: 10px;
+    min-width: 400px;
+}
+
+#intro_box {
+    background: grey;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#resume_box {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#about_box {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 5% 30px 5%;
+    height: fit-content;
+}
+
+#charms_box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid_item {
+    background-color: lightgray;
+}
+
+#sites_box {
+    padding-top: 30px;
+    height: fit-content;
+    background-color: antiquewhite;
+}
+
+#contact_box {
+    height: 150px;
+}
+
+.theme_btn_1 {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.5em;
+    background: none;
+    border: 2.5px solid lightgray;
+    border-radius: 10px;
+    color: lightgray;
+    font-family: RobotoNormal;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.theme_btn_2 {
+    color: ghostwhite;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 1.2em;
+    padding: 5px 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.user_form {
+    display: grid;
+}
+
+.dot {
+    font-family: RobotoSlab;
+    color: red;
+    font-size: 2em;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+}
+.larger_then_life {
+    font-size: 2.5em;
+}
+
+.form_item {
+    margin: 15px 10%;
+}
+
+.text_quote {
+    font-size: 1em;
+    display: inline-block;
+}
+
+.flex_right {
+    margin: 0 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    font-size: 1.5em;
+    background: none;
+    border: 2.5px solid lightgray;
+    border-radius: 10px;
+    font-family: RobotoNormal;
+}
+
+.theme_btn_1:hover {
+    color: red;
+    border: 2.5px solid red;
+}
+
+.theme_btn_2:hover {
+    color: ghostwhite;
+    background-color: lightgray;
+}
+
+
+
+.display {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+@media screen and (min-width: 600px) {
+
+    .charm {
+        padding: 0 10% ;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body {
+        padding: 50px;
+    }
+
+    .text_quote {
+        font-size: 1.3em;
+    }
+
+    .larger_then_life {
+        font-size: 3.5em;
+    }
+    .flex_right {
+        margin: 0 10% 15px 0;
+        display: flex;
+        justify-content: right;
+    }
+
+    #about_box {
+        font-size: 1.5em;
+        margin: 0 20% 300px 20%;
+        text-align: left;
+    }
+    .theme_btn_1 {
+        width: fit-content;
+        padding: 10px 30px;
+        font-size: 1.5em;
+        background: none;
+        border: 2.5px solid lightgray;
+        border-radius: 10px;
+        color: lightgray;
+        font-family: RobotoNormal;
+        text-transform: uppercase;
+    }
+}

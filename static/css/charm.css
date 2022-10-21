@@ -1,0 +1,33 @@
+.charm_left {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
+
+.charm_right {
+    width: 100%;;
+}
+
+.charm_years {
+    margin-top: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0 ;
+    
+}
+
+.charm_stamps {
+    display: grid;
+    grid-template-columns: auto 200px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .charm {
+        padding: 0 10% ;
+        display: flex;
+        justify-content: space-between;
+    }
+}

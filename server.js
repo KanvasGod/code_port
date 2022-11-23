@@ -1,10 +1,11 @@
 const express = require('express');
 const PORT = process.env.PORT || 3000;
 const app = express();
+require('dotenv').config();
 const { sendMessage } = require('./libs/sendEmail')
 const { emailV } = require('./libs/regex');
 const {count, readCount} = require('./libs/counter');
-require('dotenv').config();
+
 app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 

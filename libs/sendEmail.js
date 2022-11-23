@@ -1,5 +1,5 @@
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(`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`);
+sgMail.setApiKey(process.env.SEND_GRID);
 
 async function sendMessage(formAddIns) {
     const htmlToText = formAddIns.html.replace(/<(.|\n)*?>/g, '');

@@ -1,0 +1,79 @@
+.cert_obj {
+    display: grid;
+    grid-template-columns: 350px auto;
+    margin: 10px 0;
+}
+
+.cert_img_block {
+    
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.cert_img {
+    height: 250px;
+}
+
+.cert_row {
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+
+.cert_obj_certs {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto 200px;
+}
+
+.cert_title {
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.cert_block {
+    background-color: lightgray;
+    border-radius: 15px;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    height: fit-content;
+    padding: 55px 0;
+}
+
+.cert_fit {
+    height: 30px;
+}
+
+.cert_flex {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 5px;
+}
+
+.cert_cert {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    .cert_obj {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 5px 0;
+    }
+
+    /* .cert_block {
+        padding-top: 100px;
+    } */
+}
